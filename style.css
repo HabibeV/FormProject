@@ -1,0 +1,66 @@
+.form1 .row {
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 25px;
+}
+
+body{
+	background-color: rgb(243, 239, 237);
+}
+.form1{
+    
+    width: 100rem;
+    margin: auto;
+
+}
+
+.form2 .row {
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 30px;
+}
+.form2{
+    width: 100rem;
+    margin: auto;
+
+}
+
+button {
+    float: right;
+}
+
+
+.print {
+    width: 75rem;
+    margin: auto;
+    visibility: hidden;
+  }
+
+
+  .table {
+    margin-top: 50px; 
+  }
+
+.visibility{
+    visibility: initial;
+
+}
+
+.success{
+    display: none;
+}
+.asuccess{
+    display:block;
+}
+
+.danger{
+    display: none;
+}
+.adanger{
+    display:block
+}
+
+.notification{
+
+    height: 50px;
+}

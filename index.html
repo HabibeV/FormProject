@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Sanalogi Project
+    </title>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+
+  <div class="notification">
+      <div class="success" id="successdiv">
+          <div class="alert alert-success" id="success">
+            <strong>Başarılı!</strong> Ürün yükleme başarılı bir şekilde gerçekleşti.
+          </div>
+      </div>
+
+      <div class="danger" id="dangerdiv">
+            <div class="alert alert-danger" id="danger">
+              <strong>Başarısız!</strong> Lütfen tüm alanları doldurun.
+            </div>
+      </div>
+  </div>  
+
+  <div class="form1">    
+    <form class="row g-3" method="post">
+        <div class="col-md-6">
+          <label  class="form-label">Sipariş Veren Firma </label>
+          <input type="text" class="form-control" id="OrderingCompany">
+        </div>
+        <div class="col-md-6">
+          <label  class="form-label">Sipariş Tarihi</label>
+          <input type="date" class="form-control" id="orderdate">
+        </div>
+    </form>
+  </div>
+
+  <div class="form2">
+    <form class="row g-3"  method="post">
+        <div class="col-12">
+          <label  class="form-label">Ürün Adı</label>
+          <input type="text" class="form-control" id="ProductName" >
+        </div>
+        <div class="col-12">
+          <label  class="form-label">Adet</label>
+          <input type="number" class="form-control" id="Piece" >
+        </div>
+        <div class="col-12">
+          <label  class="form-label">Tutar</label>
+          <input type="number" class="form-control" id="Amount">
+        </div>
+        <div class="col-12">
+            <button  class="btn btn-primary" id="buton"   > Kaydet</button>
+          </div>
+      </form>
+    </div>
+     
+    <div class="print" id="hiddentable">
+      <table  class="table table-striped" id="table">
+         <th> Sipariş Veren Firma</th>
+         <th> Sipariş Tarihi</th>
+         <th> Ürün Adı</th>
+         <th> Adet</th>
+         <th> Tutar</th>
+      </table>
+    </div>
+
+    <script src="jquery-3.6.0.slim.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
